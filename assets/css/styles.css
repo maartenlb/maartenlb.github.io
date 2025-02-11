@@ -1,0 +1,123 @@
+/* CSS Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+.projects-container {
+    display: flex;
+    flex-direction: column;
+    gap: 0; /* Remove gap between projects */
+    padding: 0; /* Remove padding to ensure no vertical gaps */
+}
+
+.project {
+    background-size: cover; /* Ensures the image covers the entire container */
+    background-position: center; /* Centers the image */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+    border-radius: 0; /* Remove border-radius for full-width effect */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    width: 100vw; /* Use viewport width to ensure full width */
+    min-height: 300px; /* Adjust as needed */
+    position: relative;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    margin: 0; /* Ensure no margin */
+}
+
+.project::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5); /* Dark overlay for better text readability */
+    z-index: 1;
+}
+
+.project * {
+    position: relative;
+    z-index: 2;
+}
+
+.project h2 {
+    font-size: 24px;
+    margin: 0 0 10px; /* Adjust margin as needed */
+}
+
+.project p {
+    font-size: 16px;
+    margin: 0 0 20px; /* Adjust margin as needed */
+}
+
+/* Image Grid Styles */
+.image-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr)); /* Adjust minmax for image size */
+    gap: 10px; /* Space between images */
+    margin-bottom: 20px;
+}
+
+.image-container {
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 8px;
+    padding: 10px;
+    text-align: center;
+}
+
+.image-container img {
+    max-width: 100%; /* Ensure images don't overflow their container */
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.image-description {
+    font-size: 14px;
+    color: #ddd;
+    margin: 0;
+}
+
+/* Video Styles */
+.project iframe {
+    width: 60%; 
+    aspect-ratio: 16 / 9; /* Maintain 16:9 aspect ratio */
+    border: none;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    display: block;
+    margin-left: auto; /* Center horizontally */
+    margin-right: auto; /* Center horizontally */
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
