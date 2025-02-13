@@ -38,7 +38,7 @@ const projects = [
         video: "https://www.youtube.com/embed/TcCA7fbOVcE?si=fRoqw2MkYlecKKl0"
     },
     {
-        title: "Pathfinder: Kingmaker - Full Respecialization and Rulebending Paladins",
+        title: "Pathfinder: Kingmaker - Full Respecialization and Rule Bending Paladins",
         description: "Pathfinder: Kingmaker is a beautiful RPG of a massive scale, but you cannot truly respec companions, only reset them to level 1. What if I wanted the default cleric party member to be a full fighter? Impossible in the base game. Another issue I had was that paladins were beholdened to the Lawful Good alignment, which can be very limiting with how it is implemented in the game. Many dialogue options have alignments attached to them and when you select them your alignment shifts very slightly to that direction, sadly there's a lot of Good and Evil aligned dialogue options and less Lawful and Chaotic options. The result? Many paladins turned Neutral Good and lost access to their paladin powers as they were no longer the required alignment! So I changed them a little. While these edits were made to Kingmaker, the same edits can also be made to the sequel, Wrath of the Righteous, as the developers built Wrath on the basis of Kingmaker.",
         backgroundImage: "assets/images/pathfinder/pathfinder_bg.jpg",
         images: [
