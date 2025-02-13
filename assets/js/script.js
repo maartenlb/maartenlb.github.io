@@ -10,6 +10,16 @@ const projects = [
         video: "https://www.youtube.com/embed/HFJlyaLAc1I"
     },
     {
+        title: "Godot Games - 2D Platformer and Survivors-like",
+        description: "In the later months of 2024 I decided to try my hand at videogame development. I read up on information and followed some tutorials and I ended up with two small but functional games. They primarily served as a hobby and a learning experience. Using the Godot engine was a little stiff for the first game. But I noticed I got the hang of it much more quickly for the second game as the engine became quite intuitive!",
+        backgroundImage: "assets/images/godot/godot_bg.png",
+        images: [
+            { src: "assets/images/godot/godot_lil_knightie.JPG", description: "A simple 2D platformer. My first Godot game, this one is basically fully created from a tutorial. I did try to put some unique features in it such as the death message and the ice platform that slows the player." },
+            { src: "assets/images/godot/godot_lil_wizzie.png", description: "A basic survivors-like. My second Godot game, while there are a lot of tutorials for individual functions which I used. I tried to also put a unique spin on some of them. Since one of the tutorials was for the Godot 4 beta, there was actually some information on there that was no longer applicable. Luckily I was familiar enough to debug simple things at this point! Speaking of, I had a lot more fun creating this one as the engine became a more intuitive to me." }
+        ],
+        video: "https://www.youtube.com/embed/TcCA7fbOVcE?si=fRoqw2MkYlecKKl0"
+    },
+    {
         title: "Mount & Blade: Warband - Various Edits, Tweaks and Textures",
         description: "I have created all kinds of edits for Mount & Blade, most simple, some a bit more complex (or just more work). Over the years this old game has always held a strange but eternal appeal to me. Below are some examples of what I have made for this game.",
         backgroundImage: "assets/images/mount_blade/mb_background.jpg",
@@ -26,16 +36,6 @@ const projects = [
             { src: "assets/images/mount_blade/mb_quest_hard.jpg", description: "Unfortunately, things such as quests, loot tables and waiting times can be a lot more difficult, especially to interpret. A lot of information of which number does what here has been a brute-force search community effort." }
         ],
         video: null // No video for this project
-    },
-    {
-        title: "Godot Games - 2D Platformer and Survivors-like",
-        description: "In the later months of 2024 I decided to try my hand at videogame development. I read up on information and followed some tutorials and I ended up with two small but functional games. They primarily served as a hobby and a learning experience. Using the Godot engine was a little stiff for the first game. But I noticed I got the hang of it much more quickly for the second game as the engine became quite intuitive!",
-        backgroundImage: "assets/images/godot/godot_bg.png",
-        images: [
-            { src: "assets/images/godot/godot_lil_knightie.JPG", description: "A simple 2D platformer. My first Godot game, this one is basically fully created from a tutorial. I did try to put some unique features in it such as the death message and the ice platform that slows the player." },
-            { src: "assets/images/godot/godot_lil_wizzie.png", description: "A basic survivors-like. My second Godot game, while there are a lot of tutorials for individual functions which I used. I tried to also put a unique spin on some of them. Since one of the tutorials was for the Godot 4 beta, there was actually some information on there that was no longer applicable. Luckily I was familiar enough to debug simple things at this point! Speaking of, I had a lot more fun creating this one as the engine became a more intuitive to me." }
-        ],
-        video: "https://www.youtube.com/embed/TcCA7fbOVcE?si=fRoqw2MkYlecKKl0"
     },
     {
         title: "Pathfinder: Kingmaker - Full Respecialization and Pious Paladins",
