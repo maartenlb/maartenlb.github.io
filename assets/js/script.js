@@ -65,7 +65,7 @@ const projects = [
     },
     {
         title: "Tabletop - Macro's, Custom Skills in Virtual Tabletops",
-        description: "While not strictly videogame related. As a long-time DM playing on Virtual Tabletops I have created many a custom macro in Roll20 and implemented some automated custom skills in Foundry. While not literally videogame related, the resemblace is close enought that I felt it deserved a place on this page (albeit at the bottom).",
+        description: "As a long-time DM playing on Virtual Tabletops I have created many a custom macro in Roll20 and implemented some automated custom skills in Foundry. While not literally videogame related, the resemblance is close enough that I felt it deserved a place on this page (albeit at the bottom).",
         backgroundImage: "assets/images/dnd/dnd_bg.jpg",
         images: [
             { src: "assets/images/dnd/dnd_foundry_attribute.png", description: "Foundry has a lot of possibility for automation, but sometimes finding the right attributes to implement a recently published or unearthed arcana feature can be hard. But it feels so right when all functions as it should." },
