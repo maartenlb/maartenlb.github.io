@@ -10,16 +10,6 @@ const projects = [
         video: "https://www.youtube.com/embed/HFJlyaLAc1I"
     },
     {
-        title: "Godot Games - 2D Platformer and Survivors-like",
-        description: "In the later months of 2024 I decided to try my hand at videogame development. I read up on information and followed some tutorials and I ended up with two small but functional games. They primarily served as a hobby and a learning experience. Using the Godot engine was a little stiff for the first game. But I noticed I got the hang of it much more quickly for the second game as the engine became quite intuitive!",
-        backgroundImage: "assets/images/godot/godot_bg.png",
-        images: [
-            { src: "assets/images/godot/godot_lil_knightie.JPG", description: "A simple 2D platformer. My first Godot game, this one is basically fully created from a tutorial. I did try to put some unique features in it such as the death message and the ice platform that slows the player." },
-            { src: "assets/images/godot/godot_lil_wizzie.png", description: "A basic survivors-like. My second Godot game, while there are a lot of tutorials for individual functions which I used. I tried to also put a unique spin on some of them. Since one of the tutorials was for the Godot 4 beta, there was actually some information on there that was no longer applicable. Luckily I was familiar enough to debug simple things at this point! Speaking of, I had a lot more fun creating this one as the engine became a more intuitive to me." }
-        ],
-        video: "https://www.youtube.com/embed/TcCA7fbOVcE?si=fRoqw2MkYlecKKl0"
-    },
-    {
         title: "Mount & Blade: Warband - Various Edits, Tweaks and Textures",
         description: "I have created all kinds of edits for Mount & Blade, most simple, some a bit more complex (or just more work). Over the years this old game has always held a strange but eternal appeal to me. Below are some examples of what I have made for this game.",
         backgroundImage: "assets/images/mount_blade/mb_background.jpg",
@@ -38,12 +28,28 @@ const projects = [
         video: null // No video for this project
     },
     {
-        title: "Pathfinder: Kingmaker - Full Respecialization and Pious Paladins",
-        description: "Description",
+        title: "Godot Games - 2D Platformer and Survivors-like",
+        description: "In the later months of 2024 I decided to try my hand at videogame development. I read up on information and followed some tutorials and I ended up with two small but functional games. They primarily served as a hobby and a learning experience. Using the Godot engine was a little stiff for the first game. But I noticed I got the hang of it much more quickly for the second game as the engine became quite intuitive!",
+        backgroundImage: "assets/images/godot/godot_bg.png",
+        images: [
+            { src: "assets/images/godot/godot_lil_knightie.JPG", description: "A simple 2D platformer. My first Godot game, this one is basically fully created from a tutorial. I did try to put some unique features in it such as the death message and the ice platform that slows the player." },
+            { src: "assets/images/godot/godot_lil_wizzie.png", description: "A basic survivors-like. My second Godot game, while there are a lot of tutorials for individual functions which I used. I tried to also put a unique spin on some of them. Since one of the tutorials was for the Godot 4 beta, there was actually some information on there that was no longer applicable. Luckily I was familiar enough to debug simple things at this point! Speaking of, I had a lot more fun creating this one as the engine became a more intuitive to me." }
+        ],
+        video: "https://www.youtube.com/embed/TcCA7fbOVcE?si=fRoqw2MkYlecKKl0"
+    },
+    {
+        title: "Pathfinder: Kingmaker - Full Respecialization and Rulebending Paladins",
+        description: "Pathfinder: Kingmaker is a beautiful RPG of a massive scale, but you cannot truly respec companions, only reset them to level 1. What if I wanted the default cleric party member to be a full fighter? Impossible in the base game. Another issue I had was that paladins were beholdened to the Lawful Good alignment, which can be very limiting with how it is implemented in the game. Many dialogue options have alignments attached to them and when you select them your alignment shifts very slightly to that direction, sadly there's a lot of Good and Evil aligned dialogue options and less Lawful and Chaotic options. The result? Many paladins turned Neutral Good and lost access to their paladin powers as they were no longer the required alignment! So I changed them a little. While these edits were made to Kingmaker, the same edits can also be made to the sequel, Wrath of the Righteous, as the developers built Wrath on the basis of Kingmaker.",
         backgroundImage: "assets/images/pathfinder/pathfinder_bg.jpg",
         images: [
-            { src: "assets/images/mount_blade/viking_conquest_blank.jpg", description: "From a boring sail..." },
-            { src: "assets/images/mount_blade/viking_conquest_dutch.jpg", description: "To ruling the seas once more!" }
+            { src: "assets/images/pathfinder/pf_harrim_cleric_1.jpg", description: "Here is Harrim, our cleric. I want to respec him into a fighter, but the game will only let me reset him to his starting state (which is a level 1 cleric)." },
+            { src: "assets/images/pathfinder/pf_harrim_multiclass.jpg", description: "If I try to edit his starting state in the code to fighter, the game will reject it and crash on loading the savefile. However, we can circumvent this by multiclassing him to fighter first, then editing his base class and finally loading the save!" },
+            { src: "assets/images/pathfinder/pf_harrim_fighter_1.jpg", description: "The end result? After editing his starting state, loading the game where he is multi-classed and then respeccing him... We turned Harrim into a fighter (I also took the opportunity to change his statline)." },
+            { src: "assets/images/pathfinder/pf_dnspy.png", description: "As Pathfinder: Kingmaker is a Unity game, modding it means going through DLLs. I used the wonderful dnSpy tool to help me with this. Luckily the code itself is C#, an object oriented language I am familiar with." },
+            { src: "assets/images/pathfinder/pf_dialogue_options.jpg", description: "With options like this... it becomes easy for a paladin to fall." },
+            { src: "assets/images/pathfinder/pf_arkandir_neutral_good.jpg", description: "Here's a paladin player character, sadly his alignment has shifted to Neutral Good and thus..." },
+            { src: "assets/images/pathfinder/pf_arkandir_lay_on_hands_off.jpg", description: "We can no longer use Lay on Hands... As we are not Lawful Good." },
+            { src: "assets/images/pathfinder/arkandir_smite_evil_glory.jpg", description: "So I removed the alignment restrictions from paladin abilities and paladin levelling. I also replaced the Paladin's smite evil with a domain power from their deity (but this is on the side, as there are very little evil enemies in the game the ability sees very little use)." },
         ],
         video: null
     },
@@ -59,11 +65,15 @@ const projects = [
     },
     {
         title: "Tabletop - Macro's, Custom Skills in Virtual Tabletops",
-        description: "Description",
+        description: "While not strictly videogame related. As a long-time DM playing on Virtual Tabletops I have created many a custom macro in Roll20 and implemented some automated custom skills in Foundry. While not literally videogame related, the resemblace is close enought that I felt it deserved a place on this page (albeit at the bottom).",
         backgroundImage: "assets/images/dnd/dnd_bg.jpg",
         images: [
-            { src: "assets/images/mount_blade/viking_conquest_blank.jpg", description: "From a boring sail..." },
-            { src: "assets/images/mount_blade/viking_conquest_dutch.jpg", description: "To ruling the seas once more!" }
+            { src: "assets/images/dnd/dnd_foundry_attribute.png", description: "Foundry has a lot of possibility for automation, but sometimes finding the right attributes to implement a recently published or unearthed arcana feature can be hard. But it feels so right when all functions as it should." },
+            { src: "assets/images/dnd/dnd_leran_macros.png", description: "I feel that roll20 has their attributes much more visible. You can find all your character's attributes in the settings of the sheet and call them in any roll. I've created many a custom macro for my player characters and my player's characters. I even got automatic animations on attacks and spellcasts working." },
+            { src: "assets/images/dnd/dnd_balefire_items.png", description: "One thing I love is that you can mix worldbuilding, game design and technical implementation!" },
+            { src: "assets/images/dnd/dnd_map_fractal.png", description: "In an apocalyptic world-ending scenario. I thought a Mandelbrot fractal render would be a nice way to visualize the end of the world on the map."}
+
+
         ],
         video: null // No video for this project
     }
