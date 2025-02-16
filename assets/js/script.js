@@ -1,7 +1,7 @@
 const projects = [
     {
         title: "Skyrim - Custom Voiced Follower, Lundah Bristleburn",
-        description: "Custom voiced follower for Skyrim. Made with the Creation Kit. Originally I set out to fix the spellsword AI in Skyrim, as NPCs with the unmodded AI often just used spells when they had magicka and swords when they didn't, instead of a mixture of sword and spell at the same time. Although I had always wanted to try my hand at modding Skyrim, so I took it as an opporunity to learn the ins and outs of the Creation Kit. So with some online resources and a decent knowledge of how Skyrim works, I went at it. Below are the results!",
+        description: "Custom voiced follower for Skyrim. Made with the Creation Kit. Originally I set out to fix the spellsword AI in Skyrim, as NPCs with the unmodded AI often just used spells when they had magicka and swords when they didn't, instead of a mixture of sword and spell at the same time. I had always wanted to try my hand at modding Skyrim, so I took it as an opporunity to learn the ins and outs of the Creation Kit. With some online resources and a decent knowledge of how Skyrim works, I went at it. Below are the results!",
         backgroundImage: "assets/images/skyrim/skyrim_bg.jpg",
         images: [
             { src: "assets/images/skyrim/lundah_bristleburn_whiterun.jpg", description: "Lundah with custom armor. While he is flagged as unique, he is still found in the same lists as vanilla NPCs, allowing compatibility with popular mods such as Spell Perk Item Distributor." },
@@ -75,7 +75,7 @@ const projects = [
 
 
         ],
-        video: null // No video for this project
+        video: null
     }
 ];
 
